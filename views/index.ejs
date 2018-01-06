@@ -1,0 +1,14 @@
+<% if (showMore === true) { %>
+  <div class='more'>
+    <p>Ada Quotes is a compilation of favorite quotes from the students of NYC-WDI-Ada. Its super cool and great.</p>
+  </div>
+<% } %>
+
+
+<% for (let i = 0; i < 10; i++) { %>
+  <p>This is loop # <%= i %> </p>
+<% } %>
+
+<p>We have quotes by <% quoteAuthors.forEach(function(author) { %>
+  <%= author %>,
+<% }) %>.</p>
